@@ -1,16 +1,16 @@
 /*--------------------------------------------------------*
-* Disciplina: Programacao Estruturada e Modular *
-*          Prof. Carlos Verissimo                                    *
+* Disciplina: Programaçao Estruturada e Modular *
+*          Prof. Carlos Veríssimo                                    *
 *--------------------------------------------------------*
 * Objetivo do Programa: Criar um Bubble Sort e reorganizar um array      *
 * Data - 27/09/2024                                            * 
 * Autor: Diego Sakata; Jonathan Batista; Caue Ferreira; Matheus Arthur; Diego Silva; Dennis Ramos; Pedro Yun Han *
 *--------------------------------------------------------*/
-// Codigo sem acentos para n�o dar problema na IDE.
+
 #include <stdio.h>
 
 void printArray(int sequenciaNumeros[], int n){
-    printf("A ordem da sequencia numerica ficou: ");
+    printf("A ordem da sequência númerica ficou: ");
     for(int i = 0; i < n; i++){
         printf("%d ",sequenciaNumeros[i]);
     }
@@ -38,13 +38,13 @@ int main()
 {
     int n;
     
-    printf("Esse programa vai pedir uma sequencia de numeros e a organizara em ordem crescente.\n");
-    printf("Entre com a quantidade de numeros que havera na sequencia: ");
+    printf("Esse programa pedirá uma sequencia de numeros e a organizará em ordem crescente.\n");
+    printf("Entre com a quantidade de numeros que haverá na sequencia: ");
     scanf("%i",&n);
 
     int sequenciaNumeros[n];
     
-    printf("Agora entre com a sequencia de numeros inteiros. (Separe os numeros com espacos):\n");
+    printf("Agora entre com a sequencia de numeros inteiros. (Separe os numeros com espaços):\n");
     
     for(int i = 0; i < n; i++){
         scanf("%d",&sequenciaNumeros[i]);
@@ -54,7 +54,7 @@ int main()
     
     bubbleSort(sequenciaNumeros, n);
     
-    printf("\nOperacoes realizadas.\n");
+    printf("\nOperações realizadas.\n");
     
     printArray(sequenciaNumeros, n);
 
